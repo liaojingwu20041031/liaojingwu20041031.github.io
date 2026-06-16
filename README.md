@@ -71,10 +71,10 @@ https://liaojingwu20041031.github.io
 - Skills：机器人系统、嵌入式控制、视觉与 AI、应用工具。
 - Projects：5 个 GitHub 代表项目。
 - Experience：教育背景、竞赛奖项、学生工作和工程项目经历。
-- Resume：下载 `resume.docx`。
+- Resume：默认下载 `resume.pdf`，同时保留 `resume.docx` 作为备用编辑文件。
 - Contact：邮箱和 GitHub。
 
 ## 后续可继续补充
 
-- 如需要 PDF 下载入口，可将简历另存为 `resume.pdf` 并把 Resume 按钮链接改为 `resume.pdf`。
+- 更新简历时，建议先修改 `resume.docx`，再导出覆盖 `resume.pdf`。
 - 如有项目演示视频/GIF，可继续替换 `assets/` 中的项目图片。

@@ -8,12 +8,6 @@
       content="廖荆武的个人技术主页：机器人系统、嵌入式控制、ROS2、智能车、物联网与移动端开发项目展示。"
     />
     <title>廖荆武 | Robotics & Embedded Systems</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;800&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -40,14 +34,14 @@
       <section class="hero section">
         <div class="hero-copy">
           <p class="eyebrow">China Three Gorges University · CS · Robotics</p>
-          <h1>把机器人、嵌入式控制和 AI 能力接到真实硬件上。</h1>
+          <h1>聚焦 ROS2 机器人系统、嵌入式控制与边缘 AI 的工程实现。</h1>
           <p class="hero-lede">
-            我是廖荆武，三峡大学计算机与信息学院计算机科学与技术专业本科生。项目主线集中在 ROS2 机器人系统、
-            STM32/ESP32 嵌入式控制、机器视觉、边缘端 AI 部署和移动端调试工具，目标是把算法、硬件和工程交付串成稳定闭环。
+            我是廖荆武，三峡大学计算机与信息学院计算机科学与技术专业本科生。长期围绕机器人系统集成、
+            STM32/ESP32 控制、机器视觉、Jetson 边缘端部署和移动端调试工具做项目，重视可复现代码、现场联调和完整任务闭环。
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#projects">查看代表项目</a>
-            <a class="button secondary" href="resume.docx" download>下载简历</a>
+            <a class="button secondary" href="resume.pdf" download>下载 PDF 简历</a>
           </div>
           <div class="hero-facts" aria-label="项目概览">
             <div>
@@ -65,9 +59,9 @@
           </div>
         </div>
         <div class="hero-visual" aria-label="项目照片墙">
-          <img class="hero-image large" src="assets/smart-retail-robot-ai.png" alt="智慧零售服务机器人概念插图" />
+          <img class="hero-image large" src="assets/gx-competition-robot.jpg" alt="GX 智能物流搬运车实物图" />
           <img class="hero-image small top" src="assets/profile-photo.jpeg" alt="廖荆武证件照" />
-          <img class="hero-image small bottom" src="assets/gx-competition-robot.jpg" alt="GX 智能物流搬运车实物图" />
+          <img class="hero-image small bottom" src="assets/floramind-device.jpg" alt="FloraMind 智能植物养护系统实物图" />
         </div>
       </section>
 
@@ -133,7 +127,12 @@
         <div class="project-list">
           <article class="project-card featured reveal">
             <div class="project-media">
-              <img src="assets/smart-retail-robot-ai.png" alt="YLHB 智慧零售机器人概念插图" />
+              <img
+                src="assets/smart-retail-robot-ai.png"
+                alt="YLHB 智慧零售机器人系统概念插图"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div class="project-content">
               <div class="project-topline">
@@ -154,7 +153,12 @@
 
           <article class="project-card reveal">
             <div class="project-media">
-              <img src="assets/gx-competition-field.jpg" alt="GX 智能物流搬运车比赛场地图" />
+              <img
+                src="assets/gx-competition-field.jpg"
+                alt="GX 智能物流搬运车比赛场地图"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div class="project-content">
               <div class="project-topline">
@@ -175,7 +179,12 @@
 
           <article class="project-card reveal">
             <div class="project-media">
-              <img src="assets/floramind-device.jpg" alt="FloraMind 智能植物养护系统实物图" />
+              <img
+                src="assets/floramind-device.jpg"
+                alt="FloraMind 智能植物养护系统实物图"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div class="project-content">
               <div class="project-topline">
@@ -194,39 +203,46 @@
             </div>
           </article>
 
-          <article class="project-card reveal">
-            <div class="project-media project-diagram">
-              <img src="assets/gx-ik-diagram.png" alt="三轴码垛机械臂逆运动学示意图" />
-            </div>
-            <div class="project-content">
-              <div class="project-topline">
-                <span>Mobile Tooling</span>
-                <a href="https://github.com/liaojingwu20041031/ylhb-robot-mobile" target="_blank" rel="noreferrer">GitHub</a>
+          <div class="secondary-projects">
+            <article class="project-card extension reveal">
+              <div class="project-media project-diagram">
+                <img
+                  src="assets/gx-ik-diagram.png"
+                  alt="三轴码垛机械臂逆运动学示意图"
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
-              <h3>YLHB Robot Mobile</h3>
-              <p class="project-highlight">
-                智慧零售机器人的手机端监控、控制和调试 APP，通过 Jetson 上的 HTTP/WebSocket bridge 与 ROS2 通信。
-              </p>
-              <dl class="project-meta">
-                <div><dt>技术栈</dt><dd>Expo, React Native, TypeScript, expo-router, FastAPI bridge, WebSocket</dd></div>
-                <div><dt>承担工作</dt><dd>状态面板、底盘控制、零售任务、调试中心、日志页、设置页、Mock/Real Robot 双模式。</dd></div>
-                <div><dt>成果</dt><dd>支持局域网调试、状态轮询/推送、短时速度命令、急停、建图/导航测试和日志追踪。</dd></div>
-              </dl>
-            </div>
-          </article>
+              <div class="project-content">
+                <div class="project-topline">
+                  <span>Mobile Tooling</span>
+                  <a href="https://github.com/liaojingwu20041031/ylhb-robot-mobile" target="_blank" rel="noreferrer">GitHub</a>
+                </div>
+                <h3>YLHB Robot Mobile</h3>
+                <p class="project-highlight">
+                  智慧零售机器人的手机端监控、控制和调试 APP，通过 Jetson 上的 HTTP/WebSocket bridge 与 ROS2 通信。
+                </p>
+                <dl class="project-meta">
+                  <div><dt>技术栈</dt><dd>Expo, React Native, TypeScript, expo-router, FastAPI bridge, WebSocket</dd></div>
+                  <div><dt>承担工作</dt><dd>状态面板、底盘控制、零售任务、调试中心、日志页、设置页、Mock/Real Robot 双模式。</dd></div>
+                  <div><dt>成果</dt><dd>支持局域网调试、状态轮询/推送、短时速度命令、急停、建图/导航测试和日志追踪。</dd></div>
+                </dl>
+              </div>
+            </article>
 
-          <article class="project-card compact reveal">
-            <div class="project-content">
-              <div class="project-topline">
-                <span>基础平台</span>
-                <a href="https://github.com/liaojingwu20041031/ROS2-smart-car" target="_blank" rel="noreferrer">GitHub</a>
+            <article class="project-card compact extension reveal">
+              <div class="project-content">
+                <div class="project-topline">
+                  <span>基础平台</span>
+                  <a href="https://github.com/liaojingwu20041031/ROS2-smart-car" target="_blank" rel="noreferrer">GitHub</a>
+                </div>
+                <h3>ROS2-smart-car</h3>
+                <p>
+                  面向智能移动机器人的 ROS2 + STM32 基础平台，包含底盘通信、IMU、雷达、TF、EKF、SLAM、Nav2 以及串口设备固化脚本。
+                </p>
               </div>
-              <h3>ROS2-smart-car</h3>
-              <p>
-                面向智能移动机器人的 ROS2 + STM32 基础平台，包含底盘通信、IMU、雷达、TF、EKF、SLAM、Nav2 以及串口设备固化脚本。
-              </p>
-            </div>
-          </article>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -270,10 +286,13 @@
           <h2>简历下载</h2>
           <p>
             页面内容已根据本地正式简历和公开 GitHub 项目继续补全。为避免公开页面暴露过多隐私，主页只展示邮箱和 GitHub；
-            完整信息请下载简历文件查看。
+            默认提供 PDF 版本便于导师和团队直接查看，DOCX 版本保留为备用编辑文件。
           </p>
         </div>
-        <a class="button primary" href="resume.docx" download>下载 DOCX 简历</a>
+        <div class="resume-actions">
+          <a class="button primary" href="resume.pdf" download>下载 PDF 简历</a>
+          <a class="button secondary light" href="resume.docx" download>备用 DOCX</a>
+        </div>
       </section>
 
       <section id="contact" class="section contact-section">
@@ -292,7 +311,7 @@
           </a>
           <a href="#resume">
             <span>Resume</span>
-            下载正式 DOCX
+            下载 PDF 简历
           </a>
         </div>
       </section>

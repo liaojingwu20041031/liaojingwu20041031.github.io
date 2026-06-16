@@ -3,6 +3,7 @@ const siteNav = document.querySelector(".site-nav");
 
 document.documentElement.classList.add("js-enabled");
 
+// Mobile navigation
 if (navToggle && siteNav) {
   navToggle.addEventListener("click", () => {
     const open = siteNav.classList.toggle("is-open");
@@ -17,6 +18,7 @@ if (navToggle && siteNav) {
   });
 }
 
+// Scroll reveal animation
 const revealTargets = document.querySelectorAll(".reveal");
 
 if ("IntersectionObserver" in window) {
@@ -33,6 +35,9 @@ if ("IntersectionObserver" in window) {
   );
 
   revealTargets.forEach((target) => observer.observe(target));
+  window.setTimeout(() => {
+    revealTargets.forEach((target) => target.classList.add("is-visible"));
+  }, 1600);
 } else {
   revealTargets.forEach((target) => target.classList.add("is-visible"));
 }
