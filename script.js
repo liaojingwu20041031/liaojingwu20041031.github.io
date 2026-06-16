@@ -1,6 +1,8 @@
 const navToggle = document.querySelector(".nav-toggle");
 const siteNav = document.querySelector(".site-nav");
 
+document.documentElement.classList.add("js-enabled");
+
 if (navToggle && siteNav) {
   navToggle.addEventListener("click", () => {
     const open = siteNav.classList.toggle("is-open");

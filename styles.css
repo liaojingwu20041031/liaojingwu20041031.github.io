@@ -277,6 +277,7 @@ h3 {
 .hero-image.top {
   left: 0;
   top: 28px;
+  object-position: center 18%;
 }
 
 .hero-image.bottom {
@@ -294,6 +295,41 @@ h3 {
 .section-body {
   color: #3e4c52;
   font-size: 1.02rem;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 1.5rem;
+}
+
+.profile-grid div {
+  min-height: 96px;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 253, 248, 0.72);
+}
+
+.profile-grid span,
+.profile-grid strong {
+  display: block;
+}
+
+.profile-grid span {
+  margin-bottom: 0.35rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.profile-grid strong {
+  color: var(--ink);
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .todo-note {
@@ -556,12 +592,17 @@ h3 {
 }
 
 .reveal {
-  opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 500ms ease, transform 500ms ease;
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.reveal.is-visible {
+.js-enabled .reveal {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 500ms ease;
+}
+
+.js-enabled .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -657,6 +698,7 @@ h3 {
 
   .hero-facts,
   .skills-grid,
+  .profile-grid,
   .contact-grid {
     grid-template-columns: 1fr;
   }
