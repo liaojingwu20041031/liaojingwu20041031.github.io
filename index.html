@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="廖荆武的个人技术主页：机器人系统、嵌入式控制、ROS2、智能车、物联网与移动端开发项目展示。"
+    />
+    <title>廖荆武 | Robotics & Embedded Systems</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="回到首页">
+        <span class="brand-mark">LJ</span>
+        <span>廖荆武</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="打开导航" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Computer Science Student · Robotics · Embedded AI</p>
+          <h1>把机器人、嵌入式控制和 AI 能力接到真实硬件上。</h1>
+          <p class="hero-lede">
+            我是廖荆武，计算机专业学生，项目主线集中在 ROS2 机器人系统、STM32 嵌入式控制、机器视觉、
+            多模态大模型交互和移动端调试工具。这个主页基于我的公开 GitHub 仓库整理，用于保研、求职和导师快速了解项目能力。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">查看代表项目</a>
+            <a class="button secondary" href="https://github.com/liaojingwu20041031" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+          <div class="hero-facts" aria-label="项目概览">
+            <div>
+              <strong>8</strong>
+              <span>公开仓库</span>
+            </div>
+            <div>
+              <strong>4+</strong>
+              <span>机器人/硬件项目</span>
+            </div>
+            <div>
+              <strong>国赛银奖</strong>
+              <span>工创赛智能物流赛道</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="项目照片墙">
+          <img class="hero-image large" src="assets/gx-competition-robot.jpg" alt="GX 智能物流搬运车实物图" />
+          <img class="hero-image small top" src="assets/floramind-device.jpg" alt="FloraMind 智能花盆实物图" />
+          <img class="hero-image small bottom" src="assets/retail-task-image.png" alt="智慧零售机器人任务识别测试图" />
+        </div>
+      </section>
+
+      <section id="about" class="section split-section">
+        <div>
+          <p class="section-kicker">About</p>
+          <h2>项目导向型的计算机学生</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            从公开仓库看，我的技术路线偏“软硬结合”：一端连接 STM32、传感器、执行器、CAN/串口和机械结构，
+            另一端用 ROS2、Nav2、SLAM、OpenCV、TensorRT、FastAPI、React Native 和大模型接口完成系统级集成。
+          </p>
+          <p>
+            我更看重项目能否被复现、调试和交付：README 中保留系统架构、启动命令、通信协议、任务流程、调试指南和安全提示。
+            对导师或团队来说，这类能力对应的是把复杂系统拆开、联调、定位问题并形成文档的工程习惯。
+          </p>
+          <div class="todo-note">
+            待补充：学校、年级、专业方向、GPA/排名、科研经历、论文/专利、正式简历 PDF。
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-heading">
+          <p class="section-kicker">Skills</p>
+          <h2>技术标签</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>机器人系统</h3>
+            <p>ROS2 Humble、Nav2、SLAM Toolbox、AMCL、robot_localization、TF/URDF、RPLidar、ZED 2i。</p>
+          </article>
+          <article class="skill-card">
+            <h3>嵌入式与控制</h3>
+            <p>STM32F103、FreeRTOS、HAL、Keil、CubeMX、SocketCAN/CANopen、串口协议、PID/闭环控制。</p>
+          </article>
+          <article class="skill-card">
+            <h3>视觉与 AI</h3>
+            <p>OpenCV、ArUco、HSV 分割、YOLO、TensorRT、CUDA、DashScope/Qwen、多模态任务理解、ASR/TTS。</p>
+          </article>
+          <article class="skill-card">
+            <h3>应用与工具</h3>
+            <p>Python、C/C++、TypeScript、React Native/Expo、FastAPI、WebSocket、GitHub、Markdown 文档化。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-heading with-action">
+          <div>
+            <p class="section-kicker">Projects</p>
+            <h2>代表项目</h2>
+          </div>
+          <span class="evidence-badge">基于 GitHub README 与代码扫描整理</span>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card featured reveal">
+            <div class="project-media">
+              <img src="assets/retail-task-image.png" alt="YLHB 智慧零售机器人任务识别测试图" />
+            </div>
+            <div class="project-content">
+              <div class="project-topline">
+                <span>主推项目</span>
+                <a href="https://github.com/liaojingwu20041031/ylhb-smart-retail-robot" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+              <h3>YLHB Smart Retail Robot</h3>
+              <p class="project-highlight">
+                一套部署在 Jetson Orin Nano 上的多模态智慧零售机器人系统，打通底盘控制、SLAM/Nav2、ZED 视觉、YOLO/TensorRT、Qwen 任务理解、语音交互和现场 UI。
+              </p>
+              <dl class="project-meta">
+                <div><dt>技术栈</dt><dd>ROS2 Humble, C++, Python, SocketCAN, Nav2, ZED 2i, TensorRT, FastAPI, Qwen</dd></div>
+                <div><dt>承担工作</dt><dd>系统架构、ZLAC8015D CANopen 底盘节点、感知节点、LLM 任务节点、移动端 bridge、运行脚本和文档组织。</dd></div>
+                <div><dt>成果</dt><dd>形成可在 Jetson 本机运行的比赛链路，支持货架导航、商品识别、推荐确认、购物车与结算状态展示。</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media">
+              <img src="assets/gx-competition-field.jpg" alt="GX 智能物流搬运车比赛场地图" />
+            </div>
+            <div class="project-content">
+              <div class="project-topline">
+                <span>竞赛项目</span>
+                <a href="https://github.com/liaojingwu20041031/GX-Intelligent-Logistics-Silver" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+              <h3>GX 智能物流搬运车</h3>
+              <p class="project-highlight">
+                面向 2025 中国大学生工程实践与创新能力大赛智能物流赛道的全套软硬件方案，仓库描述与 README 标注 National Silver Award。
+              </p>
+              <dl class="project-meta">
+                <div><dt>技术栈</dt><dd>STM32F103ZET6, C, Keil, Raspberry Pi, Python, OpenCV, ArUco, 机械臂逆运动学</dd></div>
+                <div><dt>承担工作</dt><dd>主控流程、串口通信、麦克纳姆轮运动控制、3 轴码垛机械臂、树莓派视觉识别与定位。</dd></div>
+                <div><dt>成果</dt><dd>实现扫码取任务、颜色识别、ArUco 毫米偏移定位、取料/暂存/加工/码垛/返回的自主流程。</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media">
+              <img src="assets/floramind-device.jpg" alt="FloraMind 智能植物养护系统实物图" />
+            </div>
+            <div class="project-content">
+              <div class="project-topline">
+                <span>IoT / Embedded</span>
+                <a href="https://github.com/liaojingwu20041031/FloraMind" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+              <h3>FloraMind 智能植物养护系统</h3>
+              <p class="project-highlight">
+                基于 STM32 + FreeRTOS 的智能花盆，融合多传感器采集、卡尔曼滤波、预测性灌溉、阿里云 IoT 和 AI 语音交互。
+              </p>
+              <dl class="project-meta">
+                <div><dt>技术栈</dt><dd>STM32F103, FreeRTOS, ESP8266, MQTT, SGP30, DHT11, ADC, ASRPRO, xiaozhi-esp32</dd></div>
+                <div><dt>承担工作</dt><dd>FreeRTOS 任务/队列设计、传感器驱动、ESP8266 云端上报、继电器控制和语音/远程/自动控制仲裁。</dd></div>
+                <div><dt>成果</dt><dd>实现温湿度、CO2/TVOC、土壤湿度、光照等数据采集与联动控制，并提供拟人化状态表达。</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-media project-diagram">
+              <img src="assets/gx-ik-diagram.png" alt="三轴码垛机械臂逆运动学示意图" />
+            </div>
+            <div class="project-content">
+              <div class="project-topline">
+                <span>Mobile Tooling</span>
+                <a href="https://github.com/liaojingwu20041031/ylhb-robot-mobile" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+              <h3>YLHB Robot Mobile</h3>
+              <p class="project-highlight">
+                智慧零售机器人的手机端监控、控制和调试 APP，通过 Jetson 上的 HTTP/WebSocket bridge 与 ROS2 通信。
+              </p>
+              <dl class="project-meta">
+                <div><dt>技术栈</dt><dd>Expo, React Native, TypeScript, expo-router, FastAPI bridge, WebSocket</dd></div>
+                <div><dt>承担工作</dt><dd>状态面板、底盘控制、零售任务、调试中心、日志页、设置页、Mock/Real Robot 双模式。</dd></div>
+                <div><dt>成果</dt><dd>支持局域网调试、状态轮询/推送、短时速度命令、急停、建图/导航测试和日志追踪。</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="project-card compact reveal">
+            <div class="project-content">
+              <div class="project-topline">
+                <span>基础平台</span>
+                <a href="https://github.com/liaojingwu20041031/ROS2-smart-car" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+              <h3>ROS2-smart-car</h3>
+              <p>
+                面向智能移动机器人的 ROS2 + STM32 基础平台，包含底盘通信、IMU、雷达、TF、EKF、SLAM、Nav2 以及串口设备固化脚本。
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section split-section">
+        <div>
+          <p class="section-kicker">Experience</p>
+          <h2>经历与工程习惯</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <span>2025</span>
+            <h3>中国大学生工程实践与创新能力大赛 · 智能物流赛道</h3>
+            <p>公开仓库标注国赛银奖，项目沉淀了 STM32 主控、树莓派视觉、机械臂动作组、赛题规则和实物图片。</p>
+          </article>
+          <article>
+            <span>2026</span>
+            <h3>智慧零售机器人系统集成</h3>
+            <p>围绕 Jetson、ROS2、Nav2、ZED、YOLO/TensorRT 和 Qwen 构建多模块机器人系统，强调现场运行、脚本化部署和文档化。</p>
+          </article>
+          <article>
+            <span>2026</span>
+            <h3>移动端与调试工具建设</h3>
+            <p>为机器人项目补齐手机端监控与控制入口，使用 Mock Mode 降低硬件依赖，方便演示、调试和状态追踪。</p>
+          </article>
+          <article>
+            <span>待补充</span>
+            <h3>科研/实习/课程设计</h3>
+            <p>请补充学校课程、实验室经历、论文、专利、实习或更正式的项目角色分工。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="resume" class="section resume-section">
+        <div>
+          <p class="section-kicker">Resume</p>
+          <h2>简历下载</h2>
+          <p>
+            当前工作区和公开仓库中未发现正式简历文件，因此这里先放占位下载入口。后续把正式简历放到站点根目录并命名为
+            <code>resume.pdf</code>，再把按钮链接改成 <code>resume.pdf</code>。
+          </p>
+        </div>
+        <a class="button primary" href="resume-placeholder.txt" download>下载占位说明</a>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2>欢迎交流机器人、嵌入式和 AI 工程项目</h2>
+        </div>
+        <div class="contact-grid">
+          <a href="mailto:liaojingwu20041031@qq.com">
+            <span>Email</span>
+            liaojingwu20041031@qq.com
+          </a>
+          <a href="https://github.com/liaojingwu20041031" target="_blank" rel="noreferrer">
+            <span>GitHub</span>
+            github.com/liaojingwu20041031
+          </a>
+          <a href="#resume">
+            <span>Resume</span>
+            待补充正式 PDF
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 廖荆武. Built for GitHub Pages.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
